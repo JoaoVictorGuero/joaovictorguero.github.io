@@ -1,94 +1,78 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agenda Gamer | O Seu Guia de Lançamentos</title>
-    <meta name="description"
-        content="Nunca mais perca o lançamento do seu jogo favorito. A Agenda Gamer é o app definitivo para rastrear datas de jogos.">
+    <title>João Victor Guero | Desenvolvedor de Jogos</title>
+    <meta name="description" content="Portfólio de João Victor Guero. Desenvolvedor de jogos e apps.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <a href="#" class="logo">
-                    <span class="logo-icon">🎮</span> Agenda<span class="accent">Gamer</span>
+                <a href="index.html" class="logo">
+                    João Victor <span class="accent">Guero</span>
                 </a>
                 <ul class="nav-links">
-                    <li><a href="#features">Recursos</a></li>
-                    <li><a href="#download" class="btn-primary">Baixar App</a></li>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="sobre.html">Sobre Mim</a></li>
+                    <li><a href="agenda.html">Agenda Gamer</a></li>
+                    <li><a href="#contact" class="btn-primary">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="container hero-container">
+        <section class="hero centered">
+            <div class="container hero-container animate-on-scroll visible">
                 <div class="hero-content">
-                    <div class="badge">Disponível no Google Play</div>
-                    <h1 class="hero-title">Domine o tempo.<br>Não perca nenhum <span
-                            class="accent-gradient">Lançamento</span>.</h1>
-                    <p class="hero-description">O aplicativo definitivo para gamers organizarem suas jogatinas.
-                        Acompanhe os principais lançamentos, crie alertas e fique por dentro do mundo dos games.</p>
+                    <div class="badge">Desenvolvedor Indie</div>
+                    <h1 class="hero-title">Criando experiências <span class="accent-gradient">Épicas</span>.</h1>
+                    <p class="hero-description">Olá! Eu sou o João Victor, um desenvolvedor apaixonado por transformar ideias em mundos e mecânicas incríveis. Explore meus projetos abaixo.</p>
                     <div class="hero-cta">
-                        <a href="https://play.google.com/store/apps/details?id=com.joaovictorguero.calendariogamer"
-                            target="_blank" class="play-store-btn">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                                alt="Disponível no Google Play">
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <div class="glow-effect"></div>
-                    <div class="phone-mockup">
-                        <img src="img.jpeg" alt="Mockup da Agenda Gamer">
+                        <a href="#portfolio" class="btn-large">Explorar Portfólio</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="features" class="features">
+        <section id="portfolio" class="games-section bg-alt section-padding">
             <div class="container">
-                <div class="section-header">
-                    <h2>Recursos <span class="accent">Épicos</span></h2>
-                    <p>Tudo o que você precisa para se manter atualizado.</p>
+                <div class="section-header animate-on-scroll visible">
+                    <h2>Meus <span class="accent">Projetos</span></h2>
+                    <p>Conheça os apps, mundos e histórias que já criei.</p>
                 </div>
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <div class="feature-icon">📅</div>
-                        <h3>Agenda Atualizada</h3>
-                        <p>Acompanhe todos os lançamentos de PS5, Xbox, PC e Switch em uma interface limpa e intuitiva.
-                        </p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🔔</div>
-                        <h3>Lembretes Customizados</h3>
-                        <p>Adicione jogos à sua lista e receba notificações para nunca perder o dia do lançamento.</p>
-                    </div>
-                    <div class="feature-card">
-                        <div class="feature-icon">🚀</div>
-                        <h3>Design Imersivo</h3>
-                        <p>Uma interface dark mode feita de gamer para gamer, com navegação fluida e rápida.</p>
+                <div class="games-grid">
+                    <!-- App: Agenda Gamer -->
+                    <div class="game-card animate-on-scroll visible">
+                        <div class="game-image-placeholder">
+                            <span class="game-icon">📅</span>
+                        </div>
+                        <div class="game-info">
+                            <h3>Agenda Gamer</h3>
+                            <p>O aplicativo definitivo para gamers e amantes de jogos. Acompanhe lançamentos, crie alertas e não perca nenhum jogo.</p>
+                            <div style="display: flex; gap: 12px; margin-top: auto; align-items: center;">
+                                <a href="agenda.html" class="btn-outline">Ver Detalhes</a>
+                                <a href="https://play.google.com/store/apps/details?id=com.joaovictorguero.calendariogamer" target="_blank" class="play-store-btn">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="Disponível no Google Play">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="download" class="cta-section">
-            <div class="container cta-container">
-                <h2>Pronto para elevar sua gameplay?</h2>
-                <p>Baixe agora a Agenda Gamer e junte-se à comunidade.</p>
-                <a href="https://play.google.com/store/apps/details?id=com.joaovictorguero.calendariogamer"
-                    target="_blank" class="btn-large">Baixar Gratuitamente</a>
+        <section id="contact" class="cta-section section-padding">
+            <div class="container cta-container animate-on-scroll visible">
+                <h2>Vamos trabalhar juntos?</h2>
+                <p>Estou sempre aberto a novos desafios, ideias e colaborações no mundo do desenvolvimento.</p>
+                <a href="mailto:guero.contato@gmail.com" class="btn-large">Entre em Contato</a>
             </div>
         </section>
     </main>
@@ -96,16 +80,15 @@
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-info">
-                <a href="#" class="logo">Agenda<span class="accent">Gamer</span></a>
-                <p>Feito por João Victor Guero</p>
+                <a href="index.html" class="logo">João Victor <span class="accent">Guero</span></a>
+                <p>Desenvolvedor de Software & Jogos</p>
             </div>
             <div class="footer-links">
-                <p>&copy; 2026 Agenda Gamer. Todos os direitos reservados.</p>
+                <p>&copy; 2026 João Victor Guero. Todos os direitos reservados.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
