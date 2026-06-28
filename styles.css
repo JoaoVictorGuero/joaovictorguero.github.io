@@ -507,9 +507,12 @@ ul {
     transform: rotateY(0deg) rotateX(0deg) scale(1.05);
 }
 
-.app-screen-placeholder {
-    font-size: 4rem;
-    color: #555;
+.app-screen-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 28px;
+    display: block;
 }
 
 .features-grid {
@@ -622,6 +625,16 @@ ul {
         justify-content: center;
         align-self: center;
     }
+    .hero-cta {
+        justify-content: center;
+    }
+    .app-mockup {
+        max-width: 200px;
+        transform: none;
+    }
+    .app-mockup:hover {
+        transform: scale(1.05);
+    }
 }
 
 @media (max-width: 768px) {
@@ -632,6 +645,19 @@ ul {
         font-size: 2.8rem;
     }
     .section-header h2 {
+        font-size: 2.2rem;
+    }
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+    .app-mockup {
+        max-width: 160px;
+    }
+    .cta-container {
+        padding: 60px 24px;
+    }
+    .cta-container h2 {
         font-size: 2.2rem;
     }
 }
